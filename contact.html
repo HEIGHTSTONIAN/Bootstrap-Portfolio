@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--navbar is seperate and outside the container-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">HEIGHTSTONIAN</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+<!--refer to the index other links-->
+                    <li><a href="indexclean.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- add the container at the top and close it our first befofre ever adding a row for content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 well">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 id="sectionborder">Contact</h2>
+                        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                            <!--This is the form code div'ed to specify size and the submit button is the one with a class for designing it in css. i copied the code and adjusted margins here, but it was all one unit with divs so I kept it altogether.-->
+                            <!-- <div class="row"> -->
+                            <label for="name">Name</label>
+                            <!-- <br /> -->
+                            <input id="name" class="input" name="name" type="text" value="" size="50" />
+                            <br />
+                            <!-- </div> -->
+                            <!-- <div class="row"> -->
+                            <label for="email">Email</label>
+                            <!-- <br /> -->
+                            <input id="email" class="input" name="email" type="text" value="" size="50" />
+                            <br />
+                            <!-- </div> -->
+                            <!-- <div class="row"> -->
+                            <label for="message">Message</label>
+                            <!-- <br /> -->
+                            <input id="message" class="input" name="email" type="text" value="" size="50" />
+                            <br />
+                            <br>
+                            <!-- </div> -->
+                            <!-- <div> -->
+                            <input id="submitbutton" type="submit" value="Submit" class="btn btn-primary">
+                            <!-- </div> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Use the opposite values from the information above to occupy the space left over on the right for each reactive size.-->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 well">
+                <h4 id="bottomborder">Connect with Me</h4>
+                <!--create class for connect w me icons to only make changes to those isolated images -->
+                <div class="smicons">
+                    <div class="col-md-4">
+                        <a href="https://github.com/HEIGHTSTONIAN">
+                            <img src="assets/images/githubicon.png" width="100%">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.linkedin.com/in/rachel-estrada-554636144">
+                            <img src="assets/images/linkedinicon.png" width="100%">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://stackoverflow.com/users/8099474/rachel-estrada-heightstonian">
+                            <img src="assets/images/stackoverflowicon.png" width="100%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </div>
+</body>
+</html>
